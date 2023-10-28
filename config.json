@@ -1,0 +1,13 @@
+{
+    "usersService": {
+      "url": "http://127.0.0.1:8001"
+    },
+    "chatService": {
+      "url": "http://127.0.0.1:8000"
+    },
+    
+    "geolocationService": {
+      "url": "http://localhost:3003"
+    }
+  }
+  
