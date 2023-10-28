@@ -6,14 +6,15 @@ const app = express();
 // Define un puerto para tu servidor
 const PORT = 3000;
 
+
 // Ruta para gestionar usuarios
+
 app.use('/users', createProxyMiddleware({
     target: config.usersService.url,
     changeOrigin: true,
     pathRewrite: {
       '^/users': ''
-    },
-    logLevel: 'debug'
+    }
   }))
 
 
@@ -25,9 +26,6 @@ app.use('/chat', createProxyMiddleware({
     }
   }))
 
-
-  
-  
 
 // Inicia el servidor
 app.listen(PORT, () => {

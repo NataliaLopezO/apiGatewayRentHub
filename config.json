@@ -1,11 +1,11 @@
 {
     "usersService": {
-      "url": "http://127.0.0.1:8001"
+      "url": "https://django-render-renthub-app.onrender.com"
     },
     "chatService": {
       "url": "http://127.0.0.1:8000"
     },
-    
+
     "geolocationService": {
       "url": "http://localhost:3003"
     }
