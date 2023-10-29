@@ -6,7 +6,6 @@ const app = express();
 // Define un puerto para tu servidor
 const PORT = 3000;
 
-
 // Ruta para gestionar usuarios
 
 app.use('/users', createProxyMiddleware({
@@ -21,6 +20,7 @@ app.use('/users', createProxyMiddleware({
 // Ruta para el servicio de chat
 app.use('/chat', createProxyMiddleware({
     target: config.chatService.url,
+    changeOrigin: true,
     pathRewrite: {
       '^/chat': ''
     }
